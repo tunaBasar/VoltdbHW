@@ -16,7 +16,7 @@ public class main {
     public ArrayList<Subscriber> getAllCustomers() {
         try {
 
-            ClientResponse response = client.callProcedure("getAllCustomers");
+            ClientResponse response = client.callProcedure("selectAllSubscribers");
 
             if (response.getStatus() != ClientResponse.SUCCESS){
                 System.err.println(response.getStatusString());
